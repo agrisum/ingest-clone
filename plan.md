@@ -125,6 +125,7 @@ We have implemented the core components of the Ingest Clone tool:
    - Defined command-line flags and arguments
    - Implemented help and version commands
    - Created output file generation
+   - Added support for comma-separated file list input
 
 5. **Utilities Package**:
    - Added helper functions for text file detection

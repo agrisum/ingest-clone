@@ -43,6 +43,9 @@ go build -o ingest ./cmd/ingest
 
 # Combine include and exclude
 ./ingest -i "*.go" -e "vendor/" /path/to/directory
+
+# Analyze specific files (comma-separated list)
+./ingest -f "main.go,README.md,config.json"
 ```
 
 ## Options
@@ -50,6 +53,7 @@ go build -o ingest ./cmd/ingest
 - `-o, --output`: Output file (default: digest.txt)
 - `-i, --include`: Patterns to include (comma-separated)
 - `-e, --exclude`: Patterns to exclude (comma-separated)
+- `-f, --files`: Specific files to analyze (comma-separated)
 - `-h, --help`: Show help
 - `-v, --version`: Show version information
 
